@@ -40,6 +40,8 @@ def greedy_lr_search(y):
             best_w, best_b = w, b
 
     print("\nBest Learning Rate =", best_lr)
+    print("Best Weights:", best_w.detach().numpy())
+    print("Best Bias:", best_b.detach().numpy())
     return best_w, best_b, best_lr
 
 print("----- AND Gate Greedy Search -----")
